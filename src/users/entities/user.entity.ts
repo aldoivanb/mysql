@@ -10,5 +10,4 @@ export class Usern {
     lastName:string;
     @Column({default:true})
     isActive:boolean;
-
 }

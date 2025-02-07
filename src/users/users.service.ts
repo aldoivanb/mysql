@@ -10,8 +10,9 @@ export class UsersService {
 
   constructor(@InjectRepository(Usern) private usersRepository:Repository<Usern>){}
 
- async create(createUserDto: CreateUserDto) {
-    return await this.usersRepository.save(createUserDto);
+ async createUser(createUserDto: CreateUserDto) {
+    let test = this.usersRepository.create(createUserDto);
+    return this.usersRepository.save(test);
   }
 
    async findAll() {

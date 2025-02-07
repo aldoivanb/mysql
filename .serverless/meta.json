@@ -109,7 +109,7 @@
               "Properties": {
                 "Code": {
                   "S3Bucket": "serverless-framework-deployments-eu-west-2-2260889c-d865",
-                  "S3Key": "serverless/nestjs-api/dev/1738964463953-2025-02-07T21:41:03.953Z/nestjs-api.zip"
+                  "S3Key": "serverless/nestjs-api/dev/1738968889183-2025-02-07T22:54:49.183Z/nestjs-api.zip"
                 },
                 "Handler": "dist/lambda.handler",
                 "Runtime": "nodejs16.x",
@@ -134,14 +134,14 @@
                 "ApiLogGroup"
               ]
             },
-            "ApiLambdaVersionmTvrwmM9BSUgts2GZxNSKl9QQ5U4gX0W7CeNHk1Y": {
+            "ApiLambdaVersionz5MYFhGWUda6FNZodcIFAfePomsTP92Wh7J9Vsbxbg": {
               "Type": "AWS::Lambda::Version",
               "DeletionPolicy": "Retain",
               "Properties": {
                 "FunctionName": {
                   "Ref": "ApiLambdaFunction"
                 },
-                "CodeSha256": "SPk97U5rvPcZcC+6pBFKQ4AWD81gkgtrjGe8qr9Yw6Y="
+                "CodeSha256": "fDFNiYvPtnEaOOcyfwIr+gjU/CddaAAmbeK8DzhccIk="
               }
             },
             "ApiGatewayRestApi": {
@@ -262,7 +262,7 @@
                 "ApiLambdaPermissionApiGateway"
               ]
             },
-            "ApiGatewayDeployment1738964441944": {
+            "ApiGatewayDeployment1738968867727": {
               "Type": "AWS::ApiGateway::Deployment",
               "Properties": {
                 "RestApiId": {
@@ -323,7 +323,7 @@
             "ApiLambdaFunctionQualifiedArn": {
               "Description": "Current Lambda function version",
               "Value": {
-                "Ref": "ApiLambdaVersionmTvrwmM9BSUgts2GZxNSKl9QQ5U4gX0W7CeNHk1Y"
+                "Ref": "ApiLambdaVersionz5MYFhGWUda6FNZodcIFAfePomsTP92Wh7J9Vsbxbg"
               },
               "Export": {
                 "Name": "sls-nestjs-api-dev-ApiLambdaFunctionQualifiedArn"
@@ -394,7 +394,7 @@
           "timeout": 6,
           "runtime": "nodejs16.x",
           "vpc": {},
-          "versionLogicalId": "ApiLambdaVersionmTvrwmM9BSUgts2GZxNSKl9QQ5U4gX0W7CeNHk1Y"
+          "versionLogicalId": "ApiLambdaVersionz5MYFhGWUda6FNZodcIFAfePomsTP92Wh7J9Vsbxbg"
         }
       }
     },
@@ -502,7 +502,7 @@
             "Properties": {
               "Code": {
                 "S3Bucket": "serverless-framework-deployments-eu-west-2-2260889c-d865",
-                "S3Key": "serverless/nestjs-api/dev/1738964463953-2025-02-07T21:41:03.953Z/nestjs-api.zip"
+                "S3Key": "serverless/nestjs-api/dev/1738968889183-2025-02-07T22:54:49.183Z/nestjs-api.zip"
               },
               "Handler": "dist/lambda.handler",
               "Runtime": "nodejs16.x",
@@ -527,14 +527,14 @@
               "ApiLogGroup"
             ]
           },
-          "ApiLambdaVersionmTvrwmM9BSUgts2GZxNSKl9QQ5U4gX0W7CeNHk1Y": {
+          "ApiLambdaVersionz5MYFhGWUda6FNZodcIFAfePomsTP92Wh7J9Vsbxbg": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "ApiLambdaFunction"
               },
-              "CodeSha256": "SPk97U5rvPcZcC+6pBFKQ4AWD81gkgtrjGe8qr9Yw6Y="
+              "CodeSha256": "fDFNiYvPtnEaOOcyfwIr+gjU/CddaAAmbeK8DzhccIk="
             }
           },
           "ApiGatewayRestApi": {
@@ -655,7 +655,7 @@
               "ApiLambdaPermissionApiGateway"
             ]
           },
-          "ApiGatewayDeployment1738964441944": {
+          "ApiGatewayDeployment1738968867727": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -716,7 +716,7 @@
           "ApiLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "ApiLambdaVersionmTvrwmM9BSUgts2GZxNSKl9QQ5U4gX0W7CeNHk1Y"
+              "Ref": "ApiLambdaVersionz5MYFhGWUda6FNZodcIFAfePomsTP92Wh7J9Vsbxbg"
             },
             "Export": {
               "Name": "sls-nestjs-api-dev-ApiLambdaFunctionQualifiedArn"
@@ -774,12 +774,12 @@
     "serviceProviderAwsCfStackName": "nestjs-api-dev",
     "serviceProviderAwsCfStackId": "arn:aws:cloudformation:eu-west-2:047719644467:stack/nestjs-api-dev/43f0d410-e59c-11ef-98d2-06124d7609bd",
     "serviceProviderAwsCfStackCreated": "2025-02-07T21:41:19.257Z",
-    "serviceProviderAwsCfStackUpdated": null,
-    "serviceProviderAwsCfStackStatus": "CREATE_COMPLETE",
+    "serviceProviderAwsCfStackUpdated": "2025-02-07T22:52:58.898Z",
+    "serviceProviderAwsCfStackStatus": "UPDATE_COMPLETE",
     "serviceProviderAwsCfStackOutputs": [
       {
         "OutputKey": "ApiLambdaFunctionQualifiedArn",
-        "OutputValue": "arn:aws:lambda:eu-west-2:047719644467:function:nestjs-api-dev-api:1",
+        "OutputValue": "arn:aws:lambda:eu-west-2:047719644467:function:nestjs-api-dev-api:9",
         "Description": "Current Lambda function version",
         "ExportName": "sls-nestjs-api-dev-ApiLambdaFunctionQualifiedArn"
       },
@@ -888,7 +888,7 @@
           "Properties": {
             "Code": {
               "S3Bucket": "serverless-framework-deployments-eu-west-2-2260889c-d865",
-              "S3Key": "serverless/nestjs-api/dev/1738964463953-2025-02-07T21:41:03.953Z/nestjs-api.zip"
+              "S3Key": "serverless/nestjs-api/dev/1738968889183-2025-02-07T22:54:49.183Z/nestjs-api.zip"
             },
             "Handler": "dist/lambda.handler",
             "Runtime": "nodejs16.x",
@@ -913,14 +913,14 @@
             "ApiLogGroup"
           ]
         },
-        "ApiLambdaVersionmTvrwmM9BSUgts2GZxNSKl9QQ5U4gX0W7CeNHk1Y": {
+        "ApiLambdaVersionz5MYFhGWUda6FNZodcIFAfePomsTP92Wh7J9Vsbxbg": {
           "Type": "AWS::Lambda::Version",
           "DeletionPolicy": "Retain",
           "Properties": {
             "FunctionName": {
               "Ref": "ApiLambdaFunction"
             },
-            "CodeSha256": "SPk97U5rvPcZcC+6pBFKQ4AWD81gkgtrjGe8qr9Yw6Y="
+            "CodeSha256": "fDFNiYvPtnEaOOcyfwIr+gjU/CddaAAmbeK8DzhccIk="
           }
         },
         "ApiGatewayRestApi": {
@@ -1041,7 +1041,7 @@
             "ApiLambdaPermissionApiGateway"
           ]
         },
-        "ApiGatewayDeployment1738964441944": {
+        "ApiGatewayDeployment1738968867727": {
           "Type": "AWS::ApiGateway::Deployment",
           "Properties": {
             "RestApiId": {
@@ -1102,7 +1102,7 @@
         "ApiLambdaFunctionQualifiedArn": {
           "Description": "Current Lambda function version",
           "Value": {
-            "Ref": "ApiLambdaVersionmTvrwmM9BSUgts2GZxNSKl9QQ5U4gX0W7CeNHk1Y"
+            "Ref": "ApiLambdaVersionz5MYFhGWUda6FNZodcIFAfePomsTP92Wh7J9Vsbxbg"
           },
           "Export": {
             "Name": "sls-nestjs-api-dev-ApiLambdaFunctionQualifiedArn"
